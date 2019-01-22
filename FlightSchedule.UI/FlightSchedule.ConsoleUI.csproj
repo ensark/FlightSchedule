@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FlightSchedule.Contracts\FlightSchedule.Contracts.csproj" />
+    <ProjectReference Include="..\FlightSchedule.DataAccessLayer\FlightSchedule.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\FlightSchedule.Interfaces\FlightSchedule.Interfaces.csproj" />
+    <ProjectReference Include="..\FlightSchedule.Mapping\FlightSchedule.Mapping.csproj" />
+    <ProjectReference Include="..\FlightSchedule.Repositories\FlightSchedule.Repositories.csproj" />
+    <ProjectReference Include="..\FlightSchedule.Services\FlightSchedule.Services.csproj" />
+	
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CSVResults\" />
+  </ItemGroup>
+</Project>
